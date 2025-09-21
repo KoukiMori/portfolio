@@ -46,16 +46,16 @@ class TopPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      spacing: 20,
+                      spacing: 16,
                       children: [
-                        Image.asset('assets/MyFace.png', scale: 5),
+                        Image.asset('assets/MyFace.png', scale: 6),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               'KOUKI\nMORI',
                               style: GoogleFonts.anton(
-                                fontSize: 70,
+                                fontSize: 48,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 height: 1, // 行間を狭くする
@@ -63,7 +63,7 @@ class TopPage extends StatelessWidget {
                             ),
                             SizedBox(height: 4),
                             Text(
-                              'Indie App Developer',
+                              'Indie\nApp Developer',
                               style: GoogleFonts.anton(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
