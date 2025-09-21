@@ -131,7 +131,7 @@ class TopPage extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        spacing: 10,
+                                        spacing: 12,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.center,
                                         children: [
