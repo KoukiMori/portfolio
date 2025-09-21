@@ -200,13 +200,13 @@ class TopPage extends StatelessWidget {
                                 ),
                               ),
                               Row(
-                                spacing: 12,
+                                spacing: 16,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  SizedBox(width: 8),
-                                  Image.asset('x_logo.png', scale: 14),
-                                  Image.asset('instagram_icon.png', scale: 150),
-                                  Image.asset('facebook_logo.png', scale: 30),
+                                  SizedBox(width: 6),
+                                  Image.asset('x_logo.png', scale: 16),
+                                  Image.asset('instagram_icon.png', scale: 160),
+                                  Image.asset('facebook_logo.png', scale: 32),
                                 ],
                               ),
                             ],
