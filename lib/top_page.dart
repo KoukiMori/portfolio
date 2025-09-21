@@ -65,7 +65,7 @@ class TopPage extends StatelessWidget {
                             Text(
                               'Indie\nApp Developer',
                               style: GoogleFonts.anton(
-                                fontSize: 20,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 height: 1, // 行間を狭くする
@@ -200,13 +200,13 @@ class TopPage extends StatelessWidget {
                                 ),
                               ),
                               Row(
-                                spacing: 10,
+                                spacing: 12,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 8),
                                   Image.asset('x_logo.png', scale: 14),
-                                  Image.asset('instagram_icon.png', scale: 140),
-                                  Image.asset('facebook_logo.png', scale: 28),
+                                  Image.asset('instagram_icon.png', scale: 150),
+                                  Image.asset('facebook_logo.png', scale: 30),
                                 ],
                               ),
                             ],
