@@ -11,9 +11,12 @@ class TopPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: bgColor,
       body: SingleChildScrollView(
+        // 水平スクロールを有効化
+        scrollDirection: Axis.horizontal,
         child: ConstrainedBox(
           constraints: BoxConstraints(
             minWidth: screenSize.width,
+            maxWidth: screenSize.width,
             minHeight: screenSize.height * 0.9,
           ),
           child: Padding(
