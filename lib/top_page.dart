@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TopPage extends StatelessWidget {
   const TopPage({super.key});
+
+  // 外部ブラウザでURLを開く（Webは新規タブ）
+  Future<void> _openUrl(String url) async {
+    final uri = Uri.parse(url);
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -204,9 +211,33 @@ class TopPage extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   SizedBox(width: 6),
-                                  Image.asset('x_logo.png', scale: 16),
-                                  Image.asset('instagram_icon.png', scale: 160),
-                                  Image.asset('facebook_logo.png', scale: 32),
+                                  // X
+                                  GestureDetector(
+                                    onTap: () => _openUrl(
+                                      'https://x.com/your_id',
+                                    ), // TODO: あなたのID
+                                    child: Image.asset('x_logo.png', scale: 16),
+                                  ),
+                                  // Instagram（ファイル名に注意）
+                                  GestureDetector(
+                                    onTap: () => _openUrl(
+                                      'https://www.instagram.com/your_id',
+                                    ),
+                                    child: Image.asset(
+                                      'instagram_icon.png',
+                                      scale: 160,
+                                    ),
+                                  ),
+                                  // Facebook
+                                  GestureDetector(
+                                    onTap: () => _openUrl(
+                                      'https://www.facebook.com/your_id',
+                                    ),
+                                    child: Image.asset(
+                                      'facebook_logo.png',
+                                      scale: 32,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ],
