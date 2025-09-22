@@ -214,14 +214,14 @@ class TopPage extends StatelessWidget {
                                   // X
                                   GestureDetector(
                                     onTap: () => _openUrl(
-                                      'https://x.com/your_id',
+                                      'https://x.com/kokirin_com',
                                     ), // TODO: あなたのID
                                     child: Image.asset('x_logo.png', scale: 16),
                                   ),
                                   // Instagram（ファイル名に注意）
                                   GestureDetector(
                                     onTap: () => _openUrl(
-                                      'https://www.instagram.com/your_id',
+                                      'https://www.instagram.com/leafvlog',
                                     ),
                                     child: Image.asset(
                                       'instagram_icon.png',
@@ -231,7 +231,7 @@ class TopPage extends StatelessWidget {
                                   // Facebook
                                   GestureDetector(
                                     onTap: () => _openUrl(
-                                      'https://www.facebook.com/your_id',
+                                      'https://www.facebook.com/share/1Fyz9bL4iB/?mibextid=wwXIfr',
                                     ),
                                     child: Image.asset(
                                       'facebook_logo.png',
