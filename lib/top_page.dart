@@ -37,7 +37,7 @@ class TopPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset('paper.png', scale: 4),
+                    Image.asset('assets/paper.png', scale: 4),
                     Padding(
                       padding: const EdgeInsets.only(right: 24.0),
                       child: Text(
@@ -59,7 +59,7 @@ class TopPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       spacing: 16,
                       children: [
-                        Image.asset('MyFace.png', scale: 6),
+                        Image.asset('assets/MyFace.png', scale: 6),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -118,7 +118,7 @@ class TopPage extends StatelessWidget {
                                       );
                                     },
                                     child: Image.asset(
-                                      'dayliNotif_logo.png',
+                                      'assets/dayliNotif_logo.png',
                                       scale: imageScale,
                                     ),
                                   ),
@@ -134,7 +134,7 @@ class TopPage extends StatelessWidget {
                                       );
                                     },
                                     child: Image.asset(
-                                      'cycleSprout_logo.png',
+                                      'assets/cycleSprout_logo.png',
                                       scale: imageScale,
                                     ),
                                   ),
@@ -177,27 +177,27 @@ class TopPage extends StatelessWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Image.asset(
-                                            'flutter_logo.png',
+                                            'assets/flutter_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'dart_logo.png',
+                                            'assets/dart_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'html_logo.png',
+                                            'assets/html_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'css3_logo.png',
+                                            'assets/css3_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'github_logo.png',
+                                            'assets/github_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'git_logo.png',
+                                            'assets/git_logo.png',
                                             scale: imageScale,
                                           ),
                                         ],
@@ -209,15 +209,15 @@ class TopPage extends StatelessWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Image.asset(
-                                            'cursor_logo.png',
+                                            'assets/cursor_logo.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'openai.png',
+                                            'assets/openai.png',
                                             scale: imageScale,
                                           ),
                                           Image.asset(
-                                            'claude_logo.png',
+                                            'assets/claude_logo.png',
                                             scale: imageScale,
                                           ),
                                         ],
@@ -258,7 +258,7 @@ class TopPage extends StatelessWidget {
                                       'https://x.com/kokirin_com',
                                     ), // TODO: あなたのID
                                     child: Image.asset(
-                                      'x_logo.png',
+                                      'assets/x_logo.png',
                                       scale: imageScale,
                                     ),
                                   ),
@@ -268,7 +268,7 @@ class TopPage extends StatelessWidget {
                                       'https://www.instagram.com/leafvlog',
                                     ),
                                     child: Image.asset(
-                                      'Instagram_icon.png',
+                                      'assets/Instagram_icon.png',
                                       scale: imageScale,
                                     ),
                                   ),
@@ -278,7 +278,7 @@ class TopPage extends StatelessWidget {
                                       'https://www.facebook.com/share/1Fyz9bL4iB/?mibextid=wwXIfr',
                                     ),
                                     child: Image.asset(
-                                      'facebook_logo.png',
+                                      'assets/facebook_logo.png',
                                       scale: imageScale,
                                     ),
                                   ),
