@@ -62,7 +62,24 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/
+    # 個別の画像ファイル
+    - assets/paper.png
+    - assets/MyFace.png
+    - assets/dayliNotif_logo.png
+    - assets/cycleSprout_logo.png
+    - assets/flutter_logo.png
+    - assets/dart_logo.png
+    - assets/html_logo.png
+    - assets/css3_logo.png
+    - assets/github_logo.png
+    - assets/git_logo.png
+    - assets/cursor_logo.png
+    - assets/openai.png
+    - assets/claude_logo.png
+    - assets/x_logo.png
+    - assets/Instagram_icon.png
+    - assets/facebook_logo.png
+    # 画像フォルダ
     - assets/dayliNotifImage/
     - assets/cycleSproutImage/
   # An image asset can refer to one or more resolution-specific "variants", see
