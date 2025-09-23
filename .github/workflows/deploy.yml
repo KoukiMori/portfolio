@@ -5,16 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# GitHub Pages デプロイに必要な権限を設定
+# gh-pages ブランチへの書き込み権限を設定
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# 同時実行の制御
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 jobs:
   build:
@@ -35,14 +28,8 @@ jobs:
       - name: Build Flutter Web
         run: flutter build web --release --base-href "/portfolio/"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./build/web
-          
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
