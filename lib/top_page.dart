@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/dailynotif_page.dart';
+import 'package:portfolio/cyclesprout_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TopPage extends StatelessWidget {
@@ -13,8 +15,10 @@ class TopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final String updateDate = '2025/09/29';
     final screenSize = MediaQuery.of(context).size;
     final bgColor = Color.fromARGB(255, 236, 236, 236);
+    final double imageScale = 22;
     return Scaffold(
       backgroundColor: bgColor,
       body: SingleChildScrollView(
@@ -37,7 +41,7 @@ class TopPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 24.0),
                       child: Text(
-                        'Update 9/28',
+                        'Update:$updateDate',
                         style: GoogleFonts.anton(
                           fontSize: 12,
                           fontWeight: FontWeight.w300,
@@ -99,12 +103,41 @@ class TopPage extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              SizedBox(height: 6),
                               Row(
-                                spacing: 6,
                                 children: [
+                                  SizedBox(width: 16),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              DailynotifPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Image.asset(
+                                      'dayliNotif_logo.png',
+                                      scale: imageScale,
+                                    ),
+                                  ),
                                   SizedBox(width: 10),
-                                  Image.asset('dailiyNotif_logo.png', scale: 3),
-                                  Image.asset('cycleSprout_logo.png', scale: 3),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              CycleSproutPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Image.asset(
+                                      'cycleSprout_logo.png',
+                                      scale: imageScale,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ],
@@ -129,6 +162,7 @@ class TopPage extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              SizedBox(height: 6),
                               Row(
                                 spacing: 6,
                                 children: [
@@ -144,40 +178,47 @@ class TopPage extends StatelessWidget {
                                         children: [
                                           Image.asset(
                                             'flutter_logo.png',
-                                            scale: 28,
+                                            scale: imageScale,
                                           ),
                                           Image.asset(
                                             'dart_logo.png',
-                                            scale: 52,
+                                            scale: imageScale,
                                           ),
                                           Image.asset(
                                             'html_logo.png',
-                                            scale: 12,
+                                            scale: imageScale,
                                           ),
                                           Image.asset(
                                             'css3_logo.png',
-                                            scale: 12,
+                                            scale: imageScale,
                                           ),
                                           Image.asset(
                                             'github_logo.png',
-                                            scale: 10,
+                                            scale: imageScale,
                                           ),
-                                          Image.asset('git_logo.png', scale: 8),
+                                          Image.asset(
+                                            'git_logo.png',
+                                            scale: imageScale,
+                                          ),
                                         ],
                                       ),
+                                      SizedBox(height: 10),
                                       Row(
-                                        spacing: 6,
+                                        spacing: 12,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.center,
                                         children: [
                                           Image.asset(
                                             'cursor_logo.png',
-                                            scale: 3.2,
+                                            scale: imageScale,
                                           ),
-                                          Image.asset('openai.png', scale: 28),
+                                          Image.asset(
+                                            'openai.png',
+                                            scale: imageScale,
+                                          ),
                                           Image.asset(
                                             'claude_logo.png',
-                                            scale: 10,
+                                            scale: imageScale,
                                           ),
                                         ],
                                       ),
@@ -206,17 +247,20 @@ class TopPage extends StatelessWidget {
                                   color: Colors.black,
                                 ),
                               ),
+                              SizedBox(height: 6),
                               Row(
-                                spacing: 16,
+                                spacing: 12,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  SizedBox(width: 6),
-                                  // X
+                                  SizedBox(width: 4),
                                   GestureDetector(
                                     onTap: () => _openUrl(
                                       'https://x.com/kokirin_com',
                                     ), // TODO: あなたのID
-                                    child: Image.asset('x_logo.png', scale: 16),
+                                    child: Image.asset(
+                                      'x_logo.png',
+                                      scale: imageScale,
+                                    ),
                                   ),
                                   // Instagram（ファイル名に注意）
                                   GestureDetector(
@@ -225,7 +269,7 @@ class TopPage extends StatelessWidget {
                                     ),
                                     child: Image.asset(
                                       'instagram_icon.png',
-                                      scale: 160,
+                                      scale: imageScale,
                                     ),
                                   ),
                                   // Facebook
@@ -235,7 +279,7 @@ class TopPage extends StatelessWidget {
                                     ),
                                     child: Image.asset(
                                       'facebook_logo.png',
-                                      scale: 32,
+                                      scale: imageScale,
                                     ),
                                   ),
                                 ],
