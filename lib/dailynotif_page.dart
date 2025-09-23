@@ -72,7 +72,7 @@ class DailynotifPage extends StatelessWidget {
                               fit: BoxFit.contain,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             width: 140,
 
                             child: Image.asset(
