@@ -6,6 +6,7 @@ class DailynotifPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -16,82 +17,86 @@ class DailynotifPage extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        centerTitle: false,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Despriction'),
-          Container(
-            color: Colors.green,
-            width: double.infinity,
-            height: 340,
-            // margin: EdgeInsets.all(12),
-            // InteractiveViewerでドラッグ操作による横スクロールを実現
-            child: InteractiveViewer(
-              minScale: 1.0,
-              maxScale: 3.0,
-              constrained: false, // 子ウィジェットのサイズ制限を解除
-              child: SizedBox(
-                width: 1100, // 十分に大きな幅を設定
-                height: 300,
-                child: Row(
-                  children: [
-                    // 各画像に固定幅を設定
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 16),
-                      child: Image.asset(
-                        'dayliNotifImage/1.PNG',
-                        fit: BoxFit.contain,
+      body: Container(
+        width: double.infinity,
+        padding: EdgeInsets.symmetric(horizontal: screenSize.width * .15),
+        child: Column(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Despriction'),
+                SizedBox(
+                  height: 300,
+
+                  // InteractiveViewerでドラッグ操作による横スクロールを実現
+                  child: InteractiveViewer(
+                    constrained: false, // 子ウィジェットのサイズ制限を解除
+                    child: SizedBox(
+                      height: 300,
+
+                      child: Row(
+                        spacing: 10,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          // 各画像に固定幅を設定
+                          SizedBox(
+                            width: 140,
+                            child: Image.asset(
+                              'dayliNotifImage/1.PNG',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 140,
+
+                            child: Image.asset(
+                              'dayliNotifImage/2.PNG',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 140,
+
+                            child: Image.asset(
+                              'dayliNotifImage/3.PNG',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 140,
+
+                            child: Image.asset(
+                              'dayliNotifImage/4.PNG',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          Container(
+                            width: 140,
+
+                            child: Image.asset(
+                              'dayliNotifImage/5.PNG',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 140,
+
+                            child: Image.asset(
+                              'dayliNotifImage/6.jpg',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 16),
-                      child: Image.asset(
-                        'dayliNotifImage/2.PNG',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 16),
-                      child: Image.asset(
-                        'dayliNotifImage/3.PNG',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 16),
-                      child: Image.asset(
-                        'dayliNotifImage/4.PNG',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 16),
-                      child: Image.asset(
-                        'dayliNotifImage/5.PNG',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Container(
-                      width: 160,
-                      margin: EdgeInsets.only(right: 0),
-                      child: Image.asset(
-                        'dayliNotifImage/6.jpg',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
+              ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
