@@ -43,32 +43,51 @@ class DailynotifPage extends StatelessWidget {
                           // 各画像に固定幅を設定
                           SizedBox(
                             width: 140,
-                            child: Image.asset('dn1.PNG', fit: BoxFit.contain),
+                            // アセット画像を表示（assets/ プレフィックス必須）
+                            child: Image.asset(
+                              'assets/dn1.PNG',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset('dn2.PNG', fit: BoxFit.contain),
+                            child: Image.asset(
+                              'assets/dn2.PNG',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset('dn3.PNG', fit: BoxFit.contain),
+                            child: Image.asset(
+                              'assets/dn3.PNG',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset('dn4.PNG', fit: BoxFit.contain),
+                            child: Image.asset(
+                              'assets/dn4.PNG',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset('dn5.PNG', fit: BoxFit.contain),
+                            child: Image.asset(
+                              'assets/dn5.PNG',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset('dn6.jpg', fit: BoxFit.contain),
+                            child: Image.asset(
+                              'assets/dn6.jpg',
+                              fit: BoxFit.contain,
+                            ),
                           ),
                         ],
                       ),
