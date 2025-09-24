@@ -43,50 +43,32 @@ class DailynotifPage extends StatelessWidget {
                           // 各画像に固定幅を設定
                           SizedBox(
                             width: 140,
-                            child: Image.asset(
-                              'dayliNotifImage/1.PNG',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn1.PNG', fit: BoxFit.contain),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset(
-                              'dayliNotifImage/2.PNG',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn2.PNG', fit: BoxFit.contain),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset(
-                              'dayliNotifImage/3.PNG',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn3.PNG', fit: BoxFit.contain),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset(
-                              'dayliNotifImage/4.PNG',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn4.PNG', fit: BoxFit.contain),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset(
-                              'dayliNotifImage/5.PNG',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn5.PNG', fit: BoxFit.contain),
                           ),
                           SizedBox(
                             width: 140,
 
-                            child: Image.asset(
-                              'dayliNotifImage/6.jpg',
-                              fit: BoxFit.contain,
-                            ),
+                            child: Image.asset('dn6.jpg', fit: BoxFit.contain),
                           ),
                         ],
                       ),
