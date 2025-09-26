@@ -64,7 +64,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Cycle Sprout',
+          _getText(context, 'ポモドの草', 'Cycle Sprout'),
           style: GoogleFonts.anton(
             fontSize: 26,
             fontWeight: FontWeight.bold,
@@ -82,9 +82,10 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
             spacing: 20,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              Column(
                 spacing: 20,
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     spacing: 10,
@@ -398,8 +399,8 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                   Text(
                     _getText(
                       context,
-                      '1. はじめに\n  ポモドの草（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。\n\n2. 収集する情報\n  ・アラーム設定情報（時刻）\n  ・アプリの使用状況データ（クラッシュレポート）\n\n3. 情報の使用方法\n   ・アプリの改善とバグ修正\n  ・ユーザーサポートの提供\n\n4. データの保存\n  アラーム設定情報は、デバイス内にのみ保存され、クラウドには保存されません。\n\n5. 権限の使用\n  ・通知権限：アラーム通知の送信\n\n6. お問い合わせ\n  jieihal090310@gmail.com\n\n7. 変更履歴\n  2024年3月24日：初版作成',
-                      '1. Introduction\n  Cycle Sprout respects user privacy and strives to protect personal information.\n\n2. Information We Collect\n  ・Alarm settings (time)\n  ・App usage data (crash reports)\n\n3. How We Use Information\n   ・App improvement and bug fixes\n  ・User support\n\n4. Data Storage\n  Alarm settings are stored only on device, not in the cloud.\n\n5. Permissions Used\n  ・Notification permission: for alarm notifications\n\n6. Contact\n  jieihal090310@gmail.com\n\n7. Revision History\n  March 24, 2024: Initial version created',
+                      '1. はじめに\n  ポモドの草（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。\n\n2. 収集する情報\n  ・アラーム設定情報（時刻）\n  ・アプリの使用状況データ（クラッシュレポート）\n\n3. 情報の使用方法\n   ・アプリの改善とバグ修正\n  ・ユーザーサポートの提供\n\n4. データの保存\n  アラーム設定情報は、デバイス内にのみ保存され、クラウドには保存されません。\n\n5. 権限の使用\n  ・通知権限：アラーム通知の送信\n\n6. お問い合わせ\n  jieihal090310@gmail.com\n\n7. 変更履歴\n  2024年9月28日：初版作成',
+                      '1. Introduction\n  Cycle Sprout respects user privacy and strives to protect personal information.\n\n2. Information We Collect\n  ・Alarm settings (time)\n  ・App usage data (crash reports)\n\n3. How We Use Information\n   ・App improvement and bug fixes\n  ・User support\n\n4. Data Storage\n  Alarm settings are stored only on device, not in the cloud.\n\n5. Permissions Used\n  ・Notification permission: for alarm notifications\n\n6. Contact\n  jieihal090310@gmail.com\n\n7. Revision History\n  March 28, 2024: Initial version created',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 12,

@@ -82,9 +82,10 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
             spacing: 20,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              Column(
                 spacing: 20,
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     spacing: 10,
