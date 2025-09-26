@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DailynotifPage extends StatelessWidget {
-  const DailynotifPage({super.key});
+class DailyNotifJPScreen extends StatelessWidget {
+  const DailyNotifJPScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,21 +12,53 @@ class DailynotifPage extends StatelessWidget {
         title: Text(
           'Daily Notif',
           style: GoogleFonts.anton(
-            fontSize: 20,
+            fontSize: 26,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
         ),
+        centerTitle: false,
       ),
       body: Container(
         width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
         padding: EdgeInsets.symmetric(horizontal: screenSize.width * .15),
         child: Column(
+          spacing: 20,
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/dayliNotif_logo.png', scale: 10),
+                SizedBox(width: 10),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Daily Notif',
+                      style: GoogleFonts.anton(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Text(
+                      'シンプルで使いやすいアラームアプリ',
+                      style: GoogleFonts.anton(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Despriction'),
+                Text('DailyNotif ScreenShot'),
                 SizedBox(
                   height: 300,
 
@@ -96,6 +128,7 @@ class DailynotifPage extends StatelessWidget {
                 ),
               ],
             ),
+            Image.asset('appstorelogo.png', scale: 4),
           ],
         ),
       ),
