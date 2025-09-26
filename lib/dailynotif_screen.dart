@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/dailynotif_screen.dart';
+import 'package:portfolio/cyclesprout_screen.dart';
 import 'package:url_launcher/url_launcher.dart'; // url_launcher をインポート
 
 class DailyNotifScreen extends StatefulWidget {

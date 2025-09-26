@@ -90,7 +90,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                   Row(
                     spacing: 10,
                     children: [
-                      Image.asset('assets/cyclesprout_logo.png', scale: 10),
+                      Image.asset('assets/cycleSprout_logo.png', scale: 10),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -141,7 +141,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                     _getText(
                       context,
                       'ポモドーロテクニックで、あなたの集中力と生産性を最大限に引き出す「ポモドの草」',
-                      '	“Cycle Sprout” maximizes your focus and productivity using the Pomodoro Technique.',
+                      '“Cycle Sprout” maximizes your focus and productivity using the Pomodoro Technique.',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
@@ -154,7 +154,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                     _getText(
                       context,
                       'ポモドーロテクニックとは、25分間の作業（ポモドーロ）と短い休憩を繰り返す時間管理術です。\nこのシンプルなサイクルが、集中力を維持し、効率を向上させることで世界中で活用されています。',
-                      '	“Cycle Sprout” maximizes your focus and productivity using the Pomodoro Technique.',
+                      '“Cycle Sprout” maximizes your focus and productivity using the Pomodoro Technique.',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
