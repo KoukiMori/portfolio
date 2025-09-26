@@ -11,6 +11,17 @@ class DailyNotifJPScreen extends StatefulWidget {
 }
 
 class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
+  // 言語判定メソッド（日本語かどうかを判定 - Web環境でも対応）
+  bool _isJapanese(BuildContext context) {
+    final locale = Localizations.localeOf(context);
+    return locale.languageCode == 'ja' || locale.toString().startsWith('ja');
+  }
+
+  // テキスト取得メソッド（言語に応じて適切なテキストを返す）
+  String _getText(BuildContext context, String japanese, String english) {
+    return _isJapanese(context) ? japanese : english;
+  }
+
   // 外部ブラウザでURLを開く（Webは新規タブ）
   Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
@@ -65,7 +76,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                             ),
                           ),
                           Text(
-                            'シンプルで使いやすい\nアラームアプリ',
+                            _getText(
+                              context,
+                              'シンプルで使いやすい\nアラームアプリ',
+                              'Simple and Easy-to-Use\nAlarm App',
+                            ),
                             style: GoogleFonts.anton(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
@@ -96,7 +111,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                 children: [
                   // メインの説明
                   Text(
-                    '起きてやることをリストし通知をグループ化したシンプルな通知アプリ。\n進行が遅れているか進んでいるかにも使える',
+                    _getText(
+                      context,
+                      '起きてやることをリストし通知をグループ化したシンプルな通知アプリ。\n進行が遅れているか進んでいるかにも使える',
+                      'A simple notification app that lists tasks and groups notifications.\nAlso useful for tracking progress.',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
                       fontWeight: FontWeight.w100,
@@ -107,7 +126,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
 
                   // ターゲットユーザー
                   Text(
-                    '看護師、介護士、シフト勤務者、不規則な生活リズムを持つ方',
+                    _getText(
+                      context,
+                      '看護師、介護士、シフト勤務者、不規則な生活リズムを持つ方',
+                      'For nurses, caregivers, shift workers, and those with irregular schedules',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
                       color: Colors.grey[700],
@@ -115,82 +138,85 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                   ),
                   SizedBox(height: 20),
                   Text(
-                    '朝の準備や出勤時間に追われている方のための通知アプリです。',
+                    _getText(
+                      context,
+                      '朝の準備や出勤時間に追われている方のための通知アプリです。',
+                      'A notification app for those who are pressed for time with morning preparations and commuting.',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '複数の生活パターンに対応し、平日と休日で異なるスケジュールを持つ方に最適です。',
+                    _getText(
+                      context,
+                      '複数の生活パターンに対応し、平日と休日で異なるスケジュールを持つ方に最適です。',
+                      'Perfect for those with multiple lifestyle patterns and different schedules for weekdays and weekends.',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '起きやるリスト通知は、朝の起床時やシフト勤務の予定に合わせて通知をグループ化できるアプリです。',
+                    _getText(
+                      context,
+                      '起きやるリスト通知は、朝の起床時やシフト勤務の予定に合わせて通知をグループ化できるアプリです。',
+                      'Wake-up list notifications can group notifications according to morning wake-up times and shift work schedules.',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '介護職・看護師・夜勤勤務者など、不規則なスケジュールを持つ方に最適！',
+                    _getText(
+                      context,
+                      '介護職・看護師・夜勤勤務者など、不規則なスケジュールを持つ方に最適！',
+                      'Perfect for caregivers, nurses, night shift workers, and others with irregular schedules!',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '事前に設定した通知グループをカレンダーに反映することが出来ます！！',
+                    _getText(
+                      context,
+                      '事前に設定した通知グループをカレンダーに反映することが出来ます！！',
+                      'You can reflect pre-set notification groups on your calendar!!',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    'シフト確認にも役立ちます。',
+                    _getText(
+                      context,
+                      'シフト確認にも役立ちます。',
+                      'Also useful for shift confirmation.',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '予め設定した時刻に通知を送り、進捗情報として確認利用することもあり！！',
+                    _getText(
+                      context,
+                      '予め設定した時刻に通知を送り、進捗情報として確認利用することもあり！！',
+                      'Send notifications at pre-set times and use them as progress information!!',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '起きてスマホやテレビを未過ぎて、ついついやる事を忘れて遅刻しない？？',
+                    _getText(
+                      context,
+                      '起きてスマホやテレビを未過ぎて、ついついやる事を忘れて遅刻しない？？',
+                      'Do you get caught up with your phone or TV and forget things to do and end up being late??',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   Text(
-                    '事前に時間を設定すれば、iPhoneやApple Watch、Mac等から通知してくれる。',
+                    _getText(
+                      context,
+                      '事前に時間を設定すれば、iPhoneやApple Watch、Mac等から通知してくれる。',
+                      'Set the time in advance and get notifications from iPhone, Apple Watch, Mac, etc.',
+                    ),
                     style: GoogleFonts.anton(fontSize: 14, color: Colors.black),
                   ),
                   SizedBox(height: 20),
-                  // 主な特徴のタイトル
-                  Text(
-                    '主な特徴',
-                    style: GoogleFonts.anton(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
-                  ),
-                  // 各特徴をTextSpanで箇条書き風に
-                  Text.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                          text: '• ルーティーンをグループ化して一括管理\n',
-                          style: GoogleFonts.anton(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                        TextSpan(
-                          text: '• シンプルで直感的な操作と画面\n',
-                          style: GoogleFonts.anton(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                        TextSpan(
-                          text: '• カレンダー機能追加\n',
-                          style: GoogleFonts.anton(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                   // キャッチフレーズ
                   Text(
-                    '大切な予定をカンタン管理しましょう！！',
+                    _getText(
+                      context,
+                      '大切な予定をカンタン管理しましょう！！',
+                      'Easily manage your important schedules!!',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -268,42 +294,13 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                   ),
                 ],
               ),
-              Row(
-                spacing: 20,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    '主な機能',
-                    style: GoogleFonts.anton(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Text(
-                    'よくある質問',
-                    style: GoogleFonts.anton(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Text(
-                    'プライバシーポリシー',
-                    style: GoogleFonts.anton(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.black,
-                    ),
-                  ),
-                ],
-              ),
+
               Column(
                 spacing: 10,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '【主な機能】',
+                    _getText(context, '【主な機能】', '【Main Features】'),
                     style: GoogleFonts.anton(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -429,7 +426,7 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                     ),
                   ),
                   Text(
-                    '-こんな方におすすめ-',
+                    _getText(context, '-こんな方におすすめ-', '-Recommended for-'),
                     style: GoogleFonts.anton(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -486,7 +483,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                   ),
 
                   Text(
-                    '-プライバシーへの配慮-',
+                    _getText(
+                      context,
+                      '-プライバシーへの配慮-',
+                      '-Privacy Considerations-',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -521,7 +522,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                     ),
                   ),
                   Text(
-                    '【よくある質問（FAQ）】',
+                    _getText(
+                      context,
+                      '【よくある質問（FAQ）】',
+                      '【Frequently Asked Questions (FAQ)】',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -578,7 +583,7 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                     ),
                   ),
                   Text(
-                    '【プライバシーポリシー】',
+                    _getText(context, '【プライバシーポリシー】', '【Privacy Policy】'),
                     style: GoogleFonts.anton(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -773,7 +778,11 @@ class _DailyNotifJPScreenState extends State<DailyNotifJPScreen> {
                     ),
                   ),
                   Text(
-                    '大切な予定を見逃さないように、Daily Notifで毎日を管理しましょう。',
+                    _getText(
+                      context,
+                      '大切な予定を見逃さないように、Daily Notifで毎日を管理しましょう。',
+                      'Manage your daily schedule with Daily Notif so you don\'t miss important appointments.',
+                    ),
                     style: GoogleFonts.anton(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
