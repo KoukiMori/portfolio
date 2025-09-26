@@ -126,7 +126,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                       ); // アクセスしたいURLに置き換えてください
                     },
                     child: Image.asset(
-                      'appstorelogo.png',
+                      'assets/appstorelogo.png',
                       scale: 5,
                     ), // assets/ プレフィックスを追加
                   ),
