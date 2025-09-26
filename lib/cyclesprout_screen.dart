@@ -230,9 +230,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs1.png'),
+                                    _showImageDialog(context, 'assets/cs1.png'),
                                 child: Image.asset(
-                                  'cs1.png',
+                                  'assets/cs1.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -241,9 +241,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs2.png'),
+                                    _showImageDialog(context, 'assets/cs2.png'),
                                 child: Image.asset(
-                                  'cs2.png',
+                                  'assets/cs2.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -252,9 +252,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs3.png'),
+                                    _showImageDialog(context, 'assets/cs3.png'),
                                 child: Image.asset(
-                                  'cs3.png',
+                                  'assets/cs3.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -263,9 +263,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs4.png'),
+                                    _showImageDialog(context, 'assets/cs4.png'),
                                 child: Image.asset(
-                                  'cs4.png',
+                                  'assets/cs4.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -274,9 +274,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs5.png'),
+                                    _showImageDialog(context, 'assets/cs5.png'),
                                 child: Image.asset(
-                                  'cs5.png',
+                                  'assets/cs5.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -285,9 +285,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs6.png'),
+                                    _showImageDialog(context, 'assets/cs6.png'),
                                 child: Image.asset(
-                                  'cs6.png',
+                                  'assets/cs6.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -296,9 +296,9 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'cs7.png'),
+                                    _showImageDialog(context, 'assets/cs7.png'),
                                 child: Image.asset(
-                                  'cs7.png',
+                                  'assets/cs7.png',
                                   fit: BoxFit.contain,
                                 ),
                               ),

@@ -267,9 +267,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn1.PNG'),
+                                    _showImageDialog(context, 'assets/dn1.PNG'),
                                 child: Image.asset(
-                                  'dn1.PNG',
+                                  'assets/dn1.PNG',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -278,9 +278,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn2.PNG'),
+                                    _showImageDialog(context, 'assets/dn2.PNG'),
                                 child: Image.asset(
-                                  'dn2.PNG',
+                                  'assets/dn2.PNG',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -289,9 +289,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn3.PNG'),
+                                    _showImageDialog(context, 'assets/dn3.PNG'),
                                 child: Image.asset(
-                                  'dn3.PNG',
+                                  'assets/dn3.PNG',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -300,9 +300,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn4.PNG'),
+                                    _showImageDialog(context, 'assets/dn4.PNG'),
                                 child: Image.asset(
-                                  'dn4.PNG',
+                                  'assets/dn4.PNG',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -311,9 +311,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn5.PNG'),
+                                    _showImageDialog(context, 'assets/dn5.PNG'),
                                 child: Image.asset(
-                                  'dn5.PNG',
+                                  'assets/dn5.PNG',
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -322,9 +322,9 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                               width: 140,
                               child: GestureDetector(
                                 onTap: () =>
-                                    _showImageDialog(context, 'dn6.jpg'),
+                                    _showImageDialog(context, 'assets/dn6.jpg'),
                                 child: Image.asset(
-                                  'dn6.jpg',
+                                  'assets/dn6.jpg',
                                   fit: BoxFit.contain,
                                 ),
                               ),
