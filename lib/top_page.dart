@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/dailynotif_jp_screen.dart';
-import 'package:portfolio/cyclesprout_page.dart';
+import 'package:portfolio/cyclesprout_screen.dart';
+import 'package:portfolio/dailynotif_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TopPage extends StatelessWidget {
@@ -115,7 +115,7 @@ class TopPage extends StatelessWidget {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              DailyNotifJPScreen(),
+                                              DailyNotifScreen(),
                                         ),
                                       );
                                     },
@@ -131,7 +131,7 @@ class TopPage extends StatelessWidget {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              CycleSproutPage(),
+                                              CycleSproutScreen(),
                                         ),
                                       );
                                     },
