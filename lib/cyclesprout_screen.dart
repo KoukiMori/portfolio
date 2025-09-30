@@ -122,7 +122,7 @@ class _CycleSproutScreenState extends State<CycleSproutScreen> {
                   GestureDetector(
                     onTap: () {
                       _openUrl(
-                        'https://www.apple.com/jp/app-store/',
+                        'https://apps.apple.com/jp/app/%E3%83%9D%E3%83%A2%E3%83%89%E3%81%AE%E8%8D%89/id6751758608',
                       ); // アクセスしたいURLに置き換えてください
                     },
                     child: Image.asset(

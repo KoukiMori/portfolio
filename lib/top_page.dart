@@ -256,9 +256,8 @@ class TopPage extends StatelessWidget {
                                 children: [
                                   SizedBox(width: 4),
                                   GestureDetector(
-                                    onTap: () => _openUrl(
-                                      'https://x.com/kokirin_com',
-                                    ), // TODO: あなたのID
+                                    onTap: () =>
+                                        _openUrl('https://x.com/kokirin_com'),
                                     child: Image.asset(
                                       'assets/x_logo.png',
                                       scale: imageScale,
