@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/dailynotif_screen.dart';
-import 'package:portfolio/cyclesprout_screen.dart';
 import 'package:url_launcher/url_launcher.dart'; // url_launcher をインポート
 
 class DailyNotifScreen extends StatefulWidget {
@@ -66,7 +64,7 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Daily Notif',
+          '介護看護シフト通知 Care Shift Notif',
           style: GoogleFonts.anton(
             fontSize: 26,
             fontWeight: FontWeight.bold,
@@ -97,7 +95,7 @@ class _DailyNotifScreenState extends State<DailyNotifScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Daily Notif',
+                            '介護看護シフト通知 Care Shift Notif',
                             style: GoogleFonts.anton(
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
