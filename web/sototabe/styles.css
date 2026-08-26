@@ -310,18 +310,6 @@ section {
   margin-inline: auto;
 }
 
-.feature-intro-shot {
-  margin: 0 0 1.25rem;
-  display: flex;
-  justify-content: center;
-}
-
-.feature-intro-shot img {
-  width: min(280px, 100%);
-  height: auto;
-  object-fit: contain;
-}
-
 .feature {
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid var(--line);
@@ -349,9 +337,14 @@ section {
 }
 
 .feature-shot img {
-  width: min(240px, 100%);
   height: auto;
   object-fit: contain;
+}
+
+/* 1枚のときも、2列時の1枚分と同じ幅に揃える */
+.feature-shot:not(.feature-shot--pair) img {
+  width: calc((100% - 0.75rem) / 2);
+  max-width: 100%;
 }
 
 /* 2枚のときは横2列 */
@@ -709,10 +702,13 @@ html.js-ready .reveal.is-visible {
     font-size: 0.95rem;
   }
 
-  .device-shot,
-  .feature-intro-shot img,
-  .feature-shot:not(.feature-shot--pair) img {
+  .device-shot {
     width: min(300px, 100%);
+  }
+
+  /* モバイルでも 01/02 の1枚分と同じ幅 */
+  .feature-shot:not(.feature-shot--pair) img {
+    width: calc((100% - 0.5rem) / 2);
   }
 
   .feature-shot--pair {
