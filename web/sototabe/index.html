@@ -5,26 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>そとたべ | Sototabe</title>
   <meta name="description" content="そとたべ — 外食お気に入りをジャンル・地区で自由に整理・記録するアプリ">
-  <meta http-equiv="refresh" content="0; url=https://koukimori.github.io/portfolio/">
-  <link rel="canonical" href="https://koukimori.github.io/portfolio/">
   <style>
-    body {
-      font-family: "Hiragino Sans", Meiryo, sans-serif;
-      max-width: 40rem;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --accent: #e53935;
+      --bg: #f7f7f7;
+      --card: #fff;
     }
-    a { color: #e53935; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .hero {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #e8e8e8;
+    }
+    .hero h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      color: var(--accent);
+    }
+    .tagline { color: var(--muted); margin: 0 0 1rem; }
+    h2 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    p, ul { margin: 0 0 0.75rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    nav { margin-bottom: 1.25rem; font-size: 0.9rem; }
+    .links a { margin-right: 1rem; }
   </style>
 </head>
 <body>
-  <h1>そとたべ</h1>
-  <p>紹介ページはポートフォリオ内にあります。</p>
-  <p><a href="https://koukimori.github.io/portfolio/">ポートフォリオを開く</a>（Apps のそとたべアイコンをタップ）</p>
-  <p>
-    <a href="./privacy.html">プライバシーポリシー</a> ·
-    <a href="./support.html">サポート</a>
-  </p>
+  <main>
+    <nav>
+      <a href="https://koukimori.github.io/portfolio/">ポートフォリオ</a>
+      ·
+      <a href="./privacy.html">プライバシー</a>
+      ·
+      <a href="./support.html">サポート</a>
+    </nav>
+
+    <section class="hero">
+      <h1>そとたべ</h1>
+      <p class="tagline">外食お気に入りを、ジャンル・地区で自由に整理・記録するアプリ</p>
+      <p>地図アプリの代替ではなく、「行った店」「また行きたい店」を自分用のリストとして残すためのツールです。アカウント登録は不要で、データは端末内に保存されます。</p>
+      <p><strong>App Store 公開準備中</strong></p>
+    </section>
+
+    <h2>こんな方におすすめ</h2>
+    <ul>
+      <li>行ったお店の名前や感想を忘れたくない方</li>
+      <li>ラーメン・カフェなど、ジャンル別にお店を分けたい方</li>
+      <li>渋谷・横浜など、地区・エリア別にリストを作りたい方</li>
+      <li>再訪したい店の評価・予算・支払い方法をメモしておきたい方</li>
+      <li>公開せず、自分だけの記録を残したい方</li>
+    </ul>
+
+    <h2>主な機能</h2>
+    <ul>
+      <li>カテゴリ（ジャンル / 地区 / シーン）で自由に整理</li>
+      <li>訪店メモ・星評価・お会計・項目別評価</li>
+      <li>写真・レシートで「何を食べたか」を履歴に残す</li>
+      <li>電話・地図・公式サイトへワンタップ</li>
+      <li>お店情報の共有ファイル（.sototabe）送受信</li>
+    </ul>
+
+    <h2>無料とプレミアム</h2>
+    <ul>
+      <li>無料版: 主要機能すべて + バナー広告 + カテゴリ最大3個 + お店情報の受信</li>
+      <li>プレミアム（¥600・買い切り）: 広告なし + カテゴリ最大16個 + お店情報の送信</li>
+    </ul>
+
+    <p class="links">
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="./support.html">サポート</a>
+      <a href="https://koukimori.github.io/portfolio/">開発者ポートフォリオ</a>
+    </p>
+  </main>
 </body>
 </html>
