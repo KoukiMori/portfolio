@@ -1,323 +1,296 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>そとたべ | 外食お気に入りを自由に整理・記録</title>
-  <meta name="description" content="そとたべは、ジャンルや地区で外食店を整理し、訪店メモ・評価・写真を残すプライベートなお店日記アプリです。基本無料。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=4">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>そとたべ | 外食お気に入りを自由に整理・記録</title>
+    <meta name="description" content="そとたべは、ジャンルや地区で外食店を整理し、訪店メモ・評価・写真を残すプライベートなお店日記アプリです。基本無料。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css?v=5">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="wrap nav" id="nav">
-      <a class="brand" href="./">
-        <img class="brand-mark" src="./sototabe_logo.png" alt="" width="32" height="32">
-        そとたべ
-      </a>
-      <nav class="nav-links" aria-label="ページ内リンク">
-        <a href="#features">できること</a>
-        <a href="#flow">使い方</a>
-        <a href="#premium">プレミアム</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="nav-cta" href="#get">アプリを入手</a>
-      <button class="nav-toggle" type="button" aria-label="メニュー" id="navToggle">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero: ブランド + 見出し1 + リード + CTA + 端末ビジュアル -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">YOUR PRIVATE FOOD JOURNAL</p>
-          <h1>行ったお店を、<br>自分の言葉で残す。</h1>
-          <p class="hero-lead">
-            ジャンルも地区も自由にカテゴリ分け。訪店メモ・星評価・写真で、
-            「また行きたい店」を忘れない。SNS 投稿はできず、記録は端末の中だけ。
-            知らない人への公開もなく、友だち同士ならアプリがあれば共有できます。
-          </p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="#get">無料ではじめる</a>
-            <a class="btn btn-ghost" href="#features">できることを見る</a>
-          </div>
-          <ul class="hero-points">
-            <li>SNS 投稿なし・端末に記録</li>
-            <li>知らない人への共有なし</li>
-            <li>友だち同士なら共有可</li>
-          </ul>
+    <header class="site-header">
+        <div class="wrap nav" id="nav">
+            <a class="brand" href="./">
+                <img class="brand-mark" src="./sototabe_logo.png" alt="" width="32" height="32"> そとたべ
+            </a>
+            <nav class="nav-links" aria-label="ページ内リンク">
+                <a href="#features">できること</a>
+                <a href="#flow">使い方</a>
+                <a href="#premium">プレミアム</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a class="nav-cta" href="#get">アプリを入手</a>
+            <button class="nav-toggle" type="button" aria-label="メニュー" id="navToggle">☰</button>
         </div>
+    </header>
 
-        <div class="hero-visual reveal">
-          <div class="hero-glow" aria-hidden="true"></div>
-          <!-- 画像自体に端末枠があるので、CSS の偽フレームは使わない -->
-          <div class="device-stack">
-            <img
-              class="device-shot device-shot-main"
-              src="./shots/hero-main.jpg"
-              alt="そとたべのホーム画面"
-              width="480"
-              height="960"
-            >
-            <img
-              class="device-shot device-shot-back"
-              src="./shots/feature-02.jpg"
-              alt=""
-              width="420"
-              height="840"
-              aria-hidden="true"
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
+        <!-- Hero: ブランド + 見出し1 + リード + CTA + 端末ビジュアル -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="reveal">
+                    <p class="eyebrow">YOUR PRIVATE FOOD JOURNAL</p>
+                    <h1>行ったお店を、<br>自分の言葉で残す。</h1>
+                    <p class="hero-lead">
+                        ジャンルも地区も自由にカテゴリ分け。訪店メモ・星評価・写真で、 「また行きたい店」を忘れない。SNS 投稿はできず、記録は端末の中だけ。 知らない人への公開もなく、友だち同士ならアプリがあれば共有できます。
+                    </p>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="#get">無料ではじめる</a>
+                        <a class="btn btn-ghost" href="#features">できることを見る</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li>SNS 投稿なし・端末に記録</li>
+                        <li>知らない人への共有なし</li>
+                        <li>友だち同士なら共有可</li>
+                    </ul>
+                </div>
 
-    <section id="features">
-      <div class="wrap">
-        <p class="section-label reveal">WHAT YOU CAN DO</p>
-        <h2 class="section-title reveal">お店の記憶をかんたんに整える。</h2>
-        <p class="section-lead reveal">
-          地図アプリの代わりではなく、自分用のお店リストと訪店記録のためのアプリです。
-        </p>
-        <div class="feature-intro-shot reveal">
-          <img src="./shots/01.jpg" alt="ホーム画面" width="480" height="960">
-        </div>
-        <div class="feature-grid">
-          <article class="feature reveal">
-            <div class="feature-shot">
-              <img src="./shots/feature-01.jpg" alt="カテゴリでお店を整理する画面" width="480" height="960">
+                <div class="hero-visual reveal">
+                    <div class="hero-glow" aria-hidden="true"></div>
+                    <!-- 画像自体に端末枠があるので、CSS の偽フレームは使わない -->
+                    <div class="device-stack">
+                        <img class="device-shot device-shot-main" src="./shots/hero-main.jpg" alt="そとたべのホーム画面" width="480" height="960">
+                        <img class="device-shot device-shot-back" src="./shots/feature-02.jpg" alt="" width="420" height="840" aria-hidden="true">
+                    </div>
+                </div>
             </div>
-            <p class="feature-num">01 · CATEGORY</p>
-            <h3>ジャンルも地区も、自分の分け方で。</h3>
-            <p>ラーメン・カフェ、渋谷・横浜、「デート向け」など。色付きタブで見やすく整理できます。</p>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-shot">
-              <img src="./shots/feature-02.jpg" alt="訪店メモと評価の画面" width="480" height="960">
-              <img src="./shots/03.jpg" alt="訪店メモの追加画面" width="480" height="960">
+        </section>
+
+        <section id="features">
+            <div class="wrap">
+                <p class="section-label reveal">WHAT YOU CAN DO</p>
+                <h2 class="section-title reveal">お店の記憶をかんたんに整える。</h2>
+                <p class="section-lead reveal">
+                    地図アプリの代わりではなく、自分用のお店リストと訪店記録のためのアプリです。
+                </p>
+                <div class="feature-intro-shot reveal">
+                    <img src="./shots/01.jpg" alt="ホーム画面" width="480" height="960">
+                </div>
+                <div class="feature-grid">
+                    <article class="feature reveal">
+                        <div class="feature-shot">
+                            <img src="./shots/feature-01.jpg" alt="カテゴリでお店を整理する画面" width="480" height="960">
+                        </div>
+                        <p class="feature-num">01 · CATEGORY</p>
+                        <h3>ジャンルも地区も、自分の分け方で。</h3>
+                        <p>ラーメン・カフェ、渋谷・横浜、「デート向け」など。色付きタブで見やすく整理できます。</p>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="feature-shot">
+                            <img src="./shots/feature-02.jpg" alt="訪店メモと評価の画面" width="480" height="960">
+                            <img src="./shots/03.jpg" alt="訪店メモの追加画面" width="480" height="960">
+                        </div>
+                        <p class="feature-num">02 · VISIT LOG</p>
+                        <h3>感想・星・お会計まで残せる。</h3>
+                        <p>今回の感想、項目別評価、レシート写真。何を食べたかも、あとから振り返れます。</p>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="feature-shot">
+                            <img src="./shots/feature-03.jpg" alt="友だちとのお店情報共有の画面" width="480" height="960">
+                        </div>
+                        <p class="feature-num">03 · PRIVATE SHARE</p>
+                        <h3>SNSには出さず、友だちへだけ。</h3>
+                        <p>
+                            SNSなどへの投稿機能はありません。お店情報は端末内の記録が基本で、 相手もそとたべを入れているときだけ、ファイルで送れます（知らない人向けの公開はありません）。
+                        </p>
+                        <div class="feature-shot feature-shot-under">
+                            <img src="./shots/07.jpg" alt="共有機能の画面" width="480" height="960">
+                        </div>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="feature-shot">
+                            <img src="./shots/feature-04.jpg" alt="最近訪れたお店が一覧の上に並ぶ画面" width="480" height="960">
+                        </div>
+                        <p class="feature-num">04 · RECENT FIRST</p>
+                        <h3>最近訪れたお店が、上から並ぶ。</h3>
+                        <p>お店一覧で最近訪れたお店を上から表示できます。すぐに「また行きたい店」を見つけられます。</p>
+                    </article>
+                </div>
+
+                <aside class="privacy-note reveal" id="privacy-share">
+                    <p class="section-label" style="margin-bottom:0.5rem">PRIVATE BY DESIGN</p>
+                    <h3>公開せず、端末で残す。共有はアプリ同士だけ。</h3>
+                    <ul>
+                        <li><strong>SNS投稿はできません。</strong>記録は自分の端末の中に残ります。</li>
+                        <li><strong>知らない人との共有・公開フィードはありません。</strong></li>
+                        <li>
+                            <strong>友だちなどがアプリをインストールしていれば</strong> AirDropやファイル共有でお店情報を渡せます。
+                        </li>
+                        <li>
+                            <strong>無料版</strong>はお店情報の<strong>受信（取り込み）</strong>まで。
+                            <strong>プレミアム</strong>でお店情報の<strong>送信（共有）</strong>が使えます。
+                        </li>
+                    </ul>
+                </aside>
             </div>
-            <p class="feature-num">02 · VISIT LOG</p>
-            <h3>感想・星・お会計まで残せる。</h3>
-            <p>今回の感想、項目別評価、レシート写真。何を食べたかも、あとから振り返れます。</p>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-shot">
-              <img src="./shots/feature-03.jpg" alt="友だちとのお店情報共有の画面" width="480" height="960">
+        </section>
+
+        <section id="flow">
+            <div class="wrap story">
+                <div class="story-copy reveal">
+                    <p class="section-label">HOW IT FITS YOUR DAY</p>
+                    <h2 class="section-title">外食のあとに、30秒だけ。</h2>
+                    <p class="section-lead">難しい準備は不要。帰りの電車で、今日のお店をそっとメモできます。</p>
+                    <ul class="story-list">
+                        <li>
+                            <div>
+                                <strong>1. カテゴリを作る</strong>
+                                <span>ジャンル、地区、シーン——好きな軸で。</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>2. お店を登録する</strong>
+                                <span>店名・写真・予約や支払い方法もまとめて。</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>3. 訪店を残す</strong>
+                                <span>感想と評価で、「また行きたい」がはっきりする。</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="story-visual reveal">
+                    <img class="device-shot" src="./shots/feature-04.jpg" alt="お店一覧で最近訪れたお店が上に並ぶ画面" width="480" height="960">
+                </div>
             </div>
-            <p class="feature-num">03 · PRIVATE SHARE</p>
-            <h3>SNS には出さず、友だちへだけ。</h3>
-            <p>
-              Instagram などへの投稿機能はありません。お店情報は端末内の記録が基本で、
-              相手もそとたべを入れているときだけ、ファイルで送れます（知らない人向けの公開はありません）。
-            </p>
-            <div class="feature-shot feature-shot-under">
-              <img src="./shots/07.jpg" alt="共有機能の画面" width="480" height="960">
+        </section>
+
+        <section id="premium">
+            <div class="wrap">
+                <p class="section-label reveal">FREE & PREMIUM</p>
+                <h2 class="section-title reveal">まずは無料。必要になったら買い切り。</h2>
+                <p class="section-lead reveal">
+                    サブスクではありません。どちらも SNS 投稿や、知らない人への公開はありません。 記録は端末内。友だちへのお店共有は「相手もアプリ導入済み」のときだけです。
+                </p>
+                <div class="pricing">
+                    <div class="price-card reveal">
+                        <h3>無料</h3>
+                        <p class="yen">¥0</p>
+                        <ul>
+                            <li>お店の登録・訪店記録・写真など主要機能（端末内）</li>
+                            <li>ユーザーカテゴリ最大 3 個</li>
+                            <li>友だちからのお店情報を<strong>受信</strong>（取り込み）</li>
+                            <li>SNS 投稿・見知らぬ人への共有は不可</li>
+                            <li>画面下部にバナー広告</li>
+                        </ul>
+                    </div>
+                    <div class="price-card featured reveal">
+                        <h3>プレミアム</h3>
+                        <p class="yen">¥600</p>
+                        <ul>
+                            <li>広告なし</li>
+                            <li>ユーザーカテゴリ最大 16 個</li>
+                            <li>友だちへお店情報を<strong>送信</strong>（相手もそとたべが必要）</li>
+                            <li>SNS 投稿・見知らぬ人への共有は不可（無料と同じ）</li>
+                            <li>買い切り（追加料金なし）</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-shot">
-              <img src="./shots/feature-04.jpg" alt="最近訪れたお店が一覧の上に並ぶ画面" width="480" height="960">
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="wrap">
+                <p class="section-label reveal">A FEW NOTES</p>
+                <h2 class="section-title reveal">よくある質問</h2>
+                <div class="reveal">
+                    <details open>
+                        <summary>そとたべはどんなアプリですか？</summary>
+                        <p>
+                            外食のお気に入り店をカテゴリ別に整理し、訪店メモ・評価・写真を残す、自分専用のお店日記アプリです。 SNS への投稿や公開フィードはなく、基本は端末内の記録だけです。
+                        </p>
+                    </details>
+                    <details>
+                        <summary>SNS に投稿できますか？</summary>
+                        <p>
+                            いいえ。Instagram や X などへの投稿機能はありません。 お店の記録・写真は自分の端末に残すためのものです。
+                        </p>
+                    </details>
+                    <details>
+                        <summary>友だちとお店情報を共有できますか？</summary>
+                        <p>
+                            知らない人との共有や、誰でも見られる公開はありません。 相手もそとたべをインストールしていれば、お店情報ファイルで渡せます。 受信（取り込み）は無料版でも利用でき、送信（共有）はプレミアム機能です。
+                        </p>
+                    </details>
+                    <details>
+                        <summary>無料とプレミアムの違いは？</summary>
+                        <p>
+                            どちらも SNS 投稿や見知らぬ人への公開はありません。 無料版は主要機能＋カテゴリ最大 3 個＋広告＋友だちからのお店情報の受信。 プレミアム（¥600・買い切り）は広告なし＋カテゴリ最大 16 個＋友だちへのお店情報の送信が使えます。
+                        </p>
+                    </details>
+                    <details>
+                        <summary>データはどこに保存されますか？</summary>
+                        <p>原則として端末内です。当方が運営するサーバーへ自動送信して保管することはありません。</p>
+                    </details>
+                    <details>
+                        <summary>対応端末は？</summary>
+                        <p>iPhone / Android スマートフォン向けです。App Store 公開準備中です。</p>
+                    </details>
+                </div>
             </div>
-            <p class="feature-num">04 · RECENT FIRST</p>
-            <h3>最近訪れたお店が、上から並ぶ。</h3>
-            <p>お店一覧で最近訪れたお店を上から表示できます。すぐに「また行きたい店」を見つけられます。</p>
-          </article>
+        </section>
+
+        <section id="get">
+            <div class="wrap">
+                <div class="cta-band reveal">
+                    <h2>自分だけの外食メモを、ここから。</h2>
+                    <p>基本無料。iPhone 向けに公開準備中です。Android も順次対応予定。</p>
+                    <div class="btn-row" style="justify-content:center">
+                        <!-- 公開後: App Store / Google Play の URL に差し替え -->
+                        <a class="btn btn-primary" href="./support.html">公開準備中・サポート</a>
+                        <a class="btn btn-ghost" href="./privacy.html">プライバシーポリシー</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-grid">
+            <div>
+                <strong>そとたべ</strong>
+                <p style="margin:0.35rem 0 0">行ったお店を、自分の言葉で残す。</p>
+            </div>
+            <div class="footer-links">
+                <a href="#features">できること</a>
+                <a href="#premium">プレミアム</a>
+                <a href="./privacy.html">プライバシー</a>
+                <a href="./support.html">サポート</a>
+                <a href="https://koukimori.github.io/portfolio/">開発者</a>
+            </div>
         </div>
-
-        <aside class="privacy-note reveal" id="privacy-share">
-          <p class="section-label" style="margin-bottom:0.5rem">PRIVATE BY DESIGN</p>
-          <h3>公開せず、端末で残す。共有はアプリ同士だけ。</h3>
-          <ul>
-            <li><strong>SNS 投稿はできません。</strong>記録は自分の端末の中に残ります。</li>
-            <li><strong>知らない人との共有・公開フィードはありません。</strong></li>
-            <li>
-              <strong>友だちなど、相手もそとたべをインストールしていれば</strong>
-              AirDrop やファイル共有でお店情報を渡せます。
-            </li>
-            <li>
-              <strong>無料版</strong>はお店情報の<strong>受信（取り込み）</strong>まで。
-              <strong>プレミアム</strong>でお店情報の<strong>送信（共有）</strong>が使えます。
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section id="flow">
-      <div class="wrap story">
-        <div class="story-copy reveal">
-          <p class="section-label">HOW IT FITS YOUR DAY</p>
-          <h2 class="section-title">外食のあとに、30秒だけ。</h2>
-          <p class="section-lead">難しい準備は不要。帰りの電車で、今日のお店をそっとメモできます。</p>
-          <ul class="story-list">
-            <li>
-              <div>
-                <strong>1. カテゴリを作る</strong>
-                <span>ジャンル、地区、シーン——好きな軸で。</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>2. お店を登録する</strong>
-                <span>店名・写真・予約や支払い方法もまとめて。</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>3. 訪店を残す</strong>
-                <span>感想と評価で、「また行きたい」がはっきりする。</span>
-              </div>
-            </li>
-          </ul>
+        <div class="wrap" style="margin-top:1.5rem">
+            © 2026 Sototabe / Kouki Mori
         </div>
-        <div class="story-visual reveal">
-          <img
-            class="device-shot"
-            src="./shots/feature-04.jpg"
-            alt="お店一覧で最近訪れたお店が上に並ぶ画面"
-            width="480"
-            height="960"
-          >
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="premium">
-      <div class="wrap">
-        <p class="section-label reveal">FREE & PREMIUM</p>
-        <h2 class="section-title reveal">まずは無料。必要になったら買い切り。</h2>
-        <p class="section-lead reveal">
-          サブスクではありません。どちらも SNS 投稿や、知らない人への公開はありません。
-          記録は端末内。友だちへのお店共有は「相手もアプリ導入済み」のときだけです。
-        </p>
-        <div class="pricing">
-          <div class="price-card reveal">
-            <h3>無料</h3>
-            <p class="yen">¥0</p>
-            <ul>
-              <li>お店の登録・訪店記録・写真など主要機能（端末内）</li>
-              <li>ユーザーカテゴリ最大 3 個</li>
-              <li>友だちからのお店情報を<strong>受信</strong>（取り込み）</li>
-              <li>SNS 投稿・見知らぬ人への共有は不可</li>
-              <li>画面下部にバナー広告</li>
-            </ul>
-          </div>
-          <div class="price-card featured reveal">
-            <h3>プレミアム</h3>
-            <p class="yen">¥600</p>
-            <ul>
-              <li>広告なし</li>
-              <li>ユーザーカテゴリ最大 16 個</li>
-              <li>友だちへお店情報を<strong>送信</strong>（相手もそとたべが必要）</li>
-              <li>SNS 投稿・見知らぬ人への共有は不可（無料と同じ）</li>
-              <li>買い切り（追加料金なし）</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="faq">
-      <div class="wrap">
-        <p class="section-label reveal">A FEW NOTES</p>
-        <h2 class="section-title reveal">よくある質問</h2>
-        <div class="reveal">
-          <details open>
-            <summary>そとたべはどんなアプリですか？</summary>
-            <p>
-              外食のお気に入り店をカテゴリ別に整理し、訪店メモ・評価・写真を残す、自分専用のお店日記アプリです。
-              SNS への投稿や公開フィードはなく、基本は端末内の記録だけです。
-            </p>
-          </details>
-          <details>
-            <summary>SNS に投稿できますか？</summary>
-            <p>
-              いいえ。Instagram や X などへの投稿機能はありません。
-              お店の記録・写真は自分の端末に残すためのものです。
-            </p>
-          </details>
-          <details>
-            <summary>友だちとお店情報を共有できますか？</summary>
-            <p>
-              知らない人との共有や、誰でも見られる公開はありません。
-              相手もそとたべをインストールしていれば、お店情報ファイルで渡せます。
-              受信（取り込み）は無料版でも利用でき、送信（共有）はプレミアム機能です。
-            </p>
-          </details>
-          <details>
-            <summary>無料とプレミアムの違いは？</summary>
-            <p>
-              どちらも SNS 投稿や見知らぬ人への公開はありません。
-              無料版は主要機能＋カテゴリ最大 3 個＋広告＋友だちからのお店情報の受信。
-              プレミアム（¥600・買い切り）は広告なし＋カテゴリ最大 16 個＋友だちへのお店情報の送信が使えます。
-            </p>
-          </details>
-          <details>
-            <summary>データはどこに保存されますか？</summary>
-            <p>原則として端末内です。当方が運営するサーバーへ自動送信して保管することはありません。</p>
-          </details>
-          <details>
-            <summary>対応端末は？</summary>
-            <p>iPhone / Android スマートフォン向けです。App Store 公開準備中です。</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="get">
-      <div class="wrap">
-        <div class="cta-band reveal">
-          <h2>自分だけの外食メモを、ここから。</h2>
-          <p>基本無料。iPhone 向けに公開準備中です。Android も順次対応予定。</p>
-          <div class="btn-row" style="justify-content:center">
-            <!-- 公開後: App Store / Google Play の URL に差し替え -->
-            <a class="btn btn-primary" href="./support.html">公開準備中・サポート</a>
-            <a class="btn btn-ghost" href="./privacy.html">プライバシーポリシー</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <strong>そとたべ</strong>
-        <p style="margin:0.35rem 0 0">行ったお店を、自分の言葉で残す。</p>
-      </div>
-      <div class="footer-links">
-        <a href="#features">できること</a>
-        <a href="#premium">プレミアム</a>
-        <a href="./privacy.html">プライバシー</a>
-        <a href="./support.html">サポート</a>
-        <a href="https://koukimori.github.io/portfolio/">開発者</a>
-      </div>
-    </div>
-    <div class="wrap" style="margin-top:1.5rem">
-      © 2026 Sototabe / Kouki Mori
-    </div>
-  </footer>
-
-  <script>
-    // モバイルナビ開閉
-    const nav = document.getElementById('nav');
-    document.getElementById('navToggle')?.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-
-    // スクロールでフェードイン
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add('is-visible');
+    <script>
+        // モバイルナビ開閉
+        const nav = document.getElementById('nav');
+        document.getElementById('navToggle')?.addEventListener('click', () => {
+            nav.classList.toggle('open');
         });
-      },
-      { threshold: 0.12 }
-    );
-    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-  </script>
+
+        // スクロールでフェードイン
+        const io = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) e.target.classList.add('is-visible');
+                });
+            }, {
+                threshold: 0.12
+            }
+        );
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
 </body>
+
 </html>
