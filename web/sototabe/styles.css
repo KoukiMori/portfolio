@@ -334,7 +334,7 @@ section {
 }
 
 .feature-shot {
-  margin-bottom: 1rem;
+  margin: 0.85rem 0 1rem;
   background: transparent;
   overflow: visible;
   display: flex;
