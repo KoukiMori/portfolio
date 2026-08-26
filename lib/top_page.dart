@@ -8,10 +8,33 @@ import 'package:url_launcher/url_launcher.dart';
 class TopPage extends StatelessWidget {
   const TopPage({super.key});
 
+  // Apps 行のアイコンサイズ（3つとも同じ見た目に揃える）
+  static const double _appIconSize = 36;
+
   // 外部ブラウザでURLを開く（Webは新規タブ）
   Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
     await launchUrl(uri, mode: LaunchMode.externalApplication);
+  }
+
+  /// 角丸・固定サイズのアプリアイコン（Apps 行用）
+  Widget _buildAppIcon({
+    required String asset,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: ClipRRect(
+        // iOS アプリアイコンに近い角丸比率
+        borderRadius: BorderRadius.circular(_appIconSize * 0.22),
+        child: Image.asset(
+          asset,
+          width: _appIconSize,
+          height: _appIconSize,
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
   }
 
   @override
@@ -110,7 +133,8 @@ class TopPage extends StatelessWidget {
                               Row(
                                 children: [
                                   SizedBox(width: 16),
-                                  GestureDetector(
+                                  _buildAppIcon(
+                                    asset: 'assets/dayliNotif_logo.png',
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -120,13 +144,10 @@ class TopPage extends StatelessWidget {
                                         ),
                                       );
                                     },
-                                    child: Image.asset(
-                                      'assets/dayliNotif_logo.png',
-                                      scale: imageScale,
-                                    ),
                                   ),
                                   SizedBox(width: 10),
-                                  GestureDetector(
+                                  _buildAppIcon(
+                                    asset: 'assets/cycleSprout_logo.png',
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -136,14 +157,10 @@ class TopPage extends StatelessWidget {
                                         ),
                                       );
                                     },
-                                    child: Image.asset(
-                                      'assets/cycleSprout_logo.png',
-                                      scale: imageScale,
-                                    ),
                                   ),
                                   SizedBox(width: 10),
-                                  // そとたべ紹介へ
-                                  GestureDetector(
+                                  _buildAppIcon(
+                                    asset: 'assets/sototabe_logo.png',
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -153,10 +170,6 @@ class TopPage extends StatelessWidget {
                                         ),
                                       );
                                     },
-                                    child: Image.asset(
-                                      'assets/sototabe_logo.png',
-                                      scale: imageScale,
-                                    ),
                                   ),
                                 ],
                               ),
