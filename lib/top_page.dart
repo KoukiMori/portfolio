@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/cyclesprout_screen.dart';
 import 'package:portfolio/dailynotif_screen.dart';
+import 'package:portfolio/sototabe_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TopPage extends StatelessWidget {
@@ -15,7 +16,7 @@ class TopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String updateDate = '2025/09/29';
+    final String updateDate = '2026/08/26';
     final screenSize = MediaQuery.of(context).size;
     final bgColor = Color.fromARGB(255, 236, 236, 236);
     final double imageScale = 22;
@@ -137,6 +138,23 @@ class TopPage extends StatelessWidget {
                                     },
                                     child: Image.asset(
                                       'assets/cycleSprout_logo.png',
+                                      scale: imageScale,
+                                    ),
+                                  ),
+                                  SizedBox(width: 10),
+                                  // そとたべ紹介へ
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              const SototabeScreen(),
+                                        ),
+                                      );
+                                    },
+                                    child: Image.asset(
+                                      'assets/sototabe_logo.png',
                                       scale: imageScale,
                                     ),
                                   ),
