@@ -304,8 +304,10 @@ section {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 720px;
+  margin-inline: auto;
 }
 
 .feature-intro-shot {
@@ -324,7 +326,7 @@ section {
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1.25rem;
+  padding: 1.35rem 1.25rem 1.4rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -333,15 +335,17 @@ section {
   box-shadow: var(--shadow);
 }
 
+/* タイトル → 画像 → テキストの縦並び */
 .feature-shot {
-  margin: 0.85rem 0 1rem;
+  margin: 0.9rem 0 1rem;
   background: transparent;
   overflow: visible;
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .feature-shot img {
@@ -350,9 +354,24 @@ section {
   object-fit: contain;
 }
 
-.feature-shot-under {
-  margin-top: 0.6rem;
-  margin-bottom: 0;
+/* 2枚のときは横2列 */
+.feature-shot--pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.feature-shot--pair img {
+  width: 100%;
+  max-width: none;
+}
+
+.feature-body {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 .feature-num {
@@ -364,7 +383,7 @@ section {
 }
 
 .feature h3 {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-family: var(--font-display);
   font-size: 1.2rem;
 }
