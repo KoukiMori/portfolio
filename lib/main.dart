@@ -13,22 +13,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Kouki Mori — Portfolio',
       debugShowCheckedModeBanner: false,
-      // Localization 設定を追加
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: [
-        Locale('en', ''), // English
-        Locale('ja', ''), // Japanese
+      supportedLocales: const [
+        Locale('en', ''),
+        Locale('ja', ''),
       ],
+      // そとたべ LP / nuidiary 系に寄せた暖色紙トーン
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFFC45C3E),
+          surface: const Color(0xFFF6F0EA),
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF6F0EA),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFF6F0EA),
+          foregroundColor: Color(0xFF1C1410),
+          elevation: 0,
+        ),
       ),
-      home: TopPage(),
+      home: const TopPage(),
     );
   }
 }

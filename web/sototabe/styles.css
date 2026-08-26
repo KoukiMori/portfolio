@@ -385,6 +385,40 @@ section {
   font-size: 0.95rem;
 }
 
+/* プライバシー・共有の説明枠 */
+.privacy-note {
+  margin-top: 2.5rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.privacy-note h3 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  line-height: 1.4;
+}
+
+.privacy-note ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.privacy-note li {
+  margin-bottom: 0.55rem;
+}
+
+.privacy-note li:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-note strong {
+  color: var(--ink);
+}
+
 .story {
   display: grid;
   grid-template-columns: 1fr 1fr;

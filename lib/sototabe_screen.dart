@@ -135,13 +135,40 @@ class _SototabeScreenState extends State<SototabeScreen> {
                   Text(
                     _getText(
                       context,
-                      '地図アプリの代替ではなく、「行った店」「また行きたい店」を自分用のリストとして残すためのツールです。アカウント登録は不要で、データは端末内に保存されます。',
-                      'It is not a map replacement—it is a personal list for places you visited or want to revisit. No account required; data stays on your device.',
+                      '地図アプリの代替ではなく、「行った店」「また行きたい店」を自分用のリストとして残すためのツールです。アカウント登録は不要で、データは端末内に保存されます。SNS への投稿機能はありません。',
+                      'It is not a map replacement—it is a personal list for places you visited or want to revisit. No account required; data stays on your device. There is no SNS posting.',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
                       fontWeight: FontWeight.w100,
                       color: Colors.black87,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    _getText(context, '共有について', 'About sharing'),
+                    style: GoogleFonts.anton(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    _getText(
+                      context,
+                      '・SNS 投稿はできません（端末での記録が基本です）\n'
+                      '・知らない人との共有・公開フィードはありません\n'
+                      '・友だちなど、相手もそとたべを入れていればお店情報をファイルで共有できます\n'
+                      '・受信（取り込み）は無料／送信（共有）はプレミアム',
+                      '・No SNS posting—records stay on your device\n'
+                      '・No sharing with strangers or public feeds\n'
+                      '・Friends can exchange store files if they also install Sototabe\n'
+                      '・Receive is free / send requires Premium',
+                    ),
+                    style: GoogleFonts.anton(
+                      fontSize: 14,
+                      color: Colors.grey[800],
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -190,12 +217,12 @@ class _SototabeScreenState extends State<SototabeScreen> {
                       '・訪店メモ・星評価・お会計・項目別評価\n'
                       '・写真・レシートで「何を食べたか」を履歴に残す\n'
                       '・電話・地図・公式サイトへワンタップ\n'
-                      '・お店情報の共有ファイル（.sototabe）送受信',
+                      '・友だち同士のみ、お店情報ファイル（.sototabe）で送受信（相手もアプリが必要）',
                       '・Organize by category (genre / area / occasion)\n'
                       '・Visit notes, star ratings, bills, and item scores\n'
                       '・Photos and receipts to remember what you ate\n'
                       '・One-tap phone, maps, and official site links\n'
-                      '・Share store info via .sototabe files',
+                      '・Friend-only .sototabe file exchange (both need the app)',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
@@ -215,10 +242,12 @@ class _SototabeScreenState extends State<SototabeScreen> {
                   Text(
                     _getText(
                       context,
-                      '・無料版: 主要機能すべて + バナー広告 + カテゴリ最大3個 + お店情報の受信\n'
-                      '・プレミアム（¥600・買い切り）: 広告なし + カテゴリ最大16個 + お店情報の送信',
-                      '・Free: all core features + banner ads + up to 3 categories + receive shared stores\n'
-                      '・Premium (¥600 one-time): no ads + up to 16 categories + send shared stores',
+                      '・どちらも SNS 投稿・見知らぬ人への共有は不可\n'
+                      '・無料版: 主要機能 + 広告 + カテゴリ最大3個 + 友だちからのお店情報の受信\n'
+                      '・プレミアム（¥600・買い切り）: 広告なし + カテゴリ最大16個 + 友だちへのお店情報の送信',
+                      '・Neither plan supports SNS posts or stranger sharing\n'
+                      '・Free: core features + ads + up to 3 categories + receive from friends\n'
+                      '・Premium (¥600 one-time): no ads + up to 16 categories + send to friends',
                     ),
                     style: GoogleFonts.anton(
                       fontSize: 14,
