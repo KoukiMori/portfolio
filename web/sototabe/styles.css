@@ -308,6 +308,18 @@ section {
   gap: 1.25rem;
 }
 
+.feature-intro-shot {
+  margin: 0 0 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-intro-shot img {
+  width: min(280px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
 .feature {
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid var(--line);
@@ -326,13 +338,21 @@ section {
   background: transparent;
   overflow: visible;
   display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
   justify-content: center;
+  align-items: center;
 }
 
 .feature-shot img {
   width: min(240px, 100%);
   height: auto;
   object-fit: contain;
+}
+
+.feature-shot-under {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
 }
 
 .feature-num {
