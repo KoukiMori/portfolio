@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/cyclesprout_screen.dart';
 import 'package:portfolio/dailynotif_screen.dart';
-import 'package:portfolio/sototabe_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TopPage extends StatelessWidget {
@@ -159,17 +158,12 @@ class TopPage extends StatelessWidget {
                                     },
                                   ),
                                   SizedBox(width: 10),
+                                  // そとたべは GitHub Pages の紹介サイトを開く
                                   _buildAppIcon(
                                     asset: 'assets/sototabe_logo.png',
-                                    onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const SototabeScreen(),
-                                        ),
-                                      );
-                                    },
+                                    onTap: () => _openUrl(
+                                      'https://koukimori.github.io/portfolio/sototabe/',
+                                    ),
                                   ),
                                 ],
                               ),

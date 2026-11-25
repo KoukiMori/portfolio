@@ -196,6 +196,15 @@ a {
   font-weight: 700;
 }
 
+.hero-emphasis {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  color: var(--accent-deep);
+  line-height: 1.4;
+}
+
 .hero-lead {
   margin: 0 0 1.75rem;
   max-width: 34rem;
@@ -225,6 +234,7 @@ a {
   position: relative;
   min-height: 420px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -256,6 +266,13 @@ a {
   max-width: 100%;
   object-fit: contain;
   background: transparent;
+}
+
+.hero-caption {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .device-shot-main {
@@ -535,6 +552,85 @@ section {
 .faq p {
   margin: 0.65rem 0 0;
   color: var(--ink-soft);
+}
+
+/* TestFlight 期間だけの案内。終了後は HTML の section ごと消す */
+.testflight-card {
+  margin: 0 0 2.5rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius);
+  background: var(--cream);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.testflight-card h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+}
+
+.testflight-card > p {
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+  color: var(--ink-soft);
+}
+
+.testflight-ask-label {
+  margin: 0.25rem 0 0.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.testflight-asks {
+  display: inline-block;
+  margin: 0 auto 1rem;
+  padding-left: 1.2rem;
+  text-align: left;
+  color: var(--ink-soft);
+}
+
+.testflight-official {
+  margin: 0 auto 1.25rem;
+  max-width: 40rem;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 2px solid var(--accent);
+  color: var(--accent-deep);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.testflight-official a {
+  color: var(--accent-deep);
+  text-underline-offset: 3px;
+}
+
+.testflight-note {
+  margin: 0 auto 1.25rem;
+  max-width: 40rem;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 2px solid var(--accent);
+  color: var(--accent-deep);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.testflight-note a {
+  color: var(--accent-deep);
+  text-underline-offset: 3px;
+}
+
+/* URL 未設定のあいだは押せないようにする */
+#testflightLink[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
 }
 
 .cta-band {
